@@ -1,7 +1,7 @@
 // import { ContactPreview } from './TodoPreview.jsx'
 const { Link } = ReactRouterDOM
 
-export function ContactList({ contacts, onRemoveContact, }) {
+export function ContactList({ contacts, onRemoveContact }) {
 
     return <section className="contact-list flex column">
         <button className="add-btn">

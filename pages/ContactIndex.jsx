@@ -8,6 +8,9 @@ import { ContactList } from "../cmp/ContactList.jsx"
 
 export function ContactIndex() {
 
+    const contacts = useSelector(storeState => storeState.contactModule.contacts)
+
+
     useEffect(() => {
         loadContacts()
             .catch(err => {
@@ -27,7 +30,7 @@ export function ContactIndex() {
             <main>
                 <ContactList contacts={contacts} onRemoveContact={onRemoveContact} />
 
-                {(!contacts.length) && <div>No contacts to show...</div>}
+                {/* {(!contacts.length) && <div>No contacts to show...</div>} */}
             </main>
         </div>
     )
