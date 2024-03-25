@@ -4,6 +4,7 @@ const { Provider } = ReactRedux
 
 import { ContactDetails } from './pages/ContactDetails.jsx'
 import { HomePage } from './pages/HomePage.jsx'
+import { ContactIndex } from './pages/ContactIndex.jsx'
 export class App extends React.Component {
 
     render() {
@@ -15,8 +16,9 @@ export class App extends React.Component {
 
                     <main className="main-layout">
                         <Routes>
-                            <Route element={<HomePage />} path="/"/>
-                            <Route element={<ContactDetails />} path="/contact/:id"/>
+                            <Route element={<HomePage />} path="/" />
+                            <Route element={<ContactDetails />} path="/contact/:id" />
+                            <Route element={<ContactIndex />} path="/contacts"></Route>
                         </Routes>
                     </main>
 
