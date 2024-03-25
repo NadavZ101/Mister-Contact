@@ -3,6 +3,7 @@ const { Route, Routes } = ReactRouterDOM
 const { Provider } = ReactRedux
 
 import { ContactDetails } from './pages/ContactDetails.jsx'
+import { ContactIndex } from './pages/ContactIndex.jsx'
 import { HomePage } from './pages/HomePage.jsx'
 import { ContactIndex } from './pages/ContactIndex.jsx'
 export class App extends React.Component {
