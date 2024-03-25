@@ -1,4 +1,5 @@
-// import { ContactPreview } from './TodoPreview.jsx'
+import { ContactPreview } from './ContactPreview.jsx'
+
 const { Link } = ReactRouterDOM
 
 export function ContactList({ contacts, onRemoveContact }) {
@@ -12,7 +13,7 @@ export function ContactList({ contacts, onRemoveContact }) {
         {contacts.map(contact => (
             <article className="contact-preview" key={contact._id}>
                 <Link className="btn" to={`/contact/${contact._id}`}>
-                    <ListPreview contact={contact} onRemoveTodo={onRemoveTodo} />
+                    <ContactPreview contact={contact} onRemoveContact={onRemoveContact} />
                 </Link>
 
             </article>

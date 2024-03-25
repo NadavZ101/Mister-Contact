@@ -24,14 +24,14 @@ export function ContactIndex() {
         console.log('YYY')
 
     }
-
+    if (!contacts) return <div>Is Loading...</div>
     return (
         <div>
             <h3>Contacts App</h3>
             <main>
                 <ContactList contacts={contacts} onRemoveContact={onRemoveContact} />
 
-                {/* {(!contacts.length) && <div>No contacts to show...</div>} */}
+                {(!contacts.length) && <div>No contacts to show...</div>}
             </main>
         </div>
     )
