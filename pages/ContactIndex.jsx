@@ -3,12 +3,13 @@ const { Link } = ReactRouterDOM
 const { useSelector, useDispatch } = ReactRedux
 
 import { contactService } from "../services/contact.service.js"
-
 import { ContactList } from "../cmp/ContactList.jsx"
+import { loadContacts } from "../store/actions/contact.actions.js"
 
 export function ContactIndex() {
 
     const contacts = useSelector(storeState => storeState.contactModule.contacts)
+    console.log("🚀 ~ ContactIndex ~ contacts:", contacts)
 
 
     useEffect(() => {

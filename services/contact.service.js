@@ -24,6 +24,7 @@ const contact = {
 _createContacts()
 
 function query() {
+    console.log('QUERYYYY')
     return storageService.query(CONTACT_KEY)
 }
 

@@ -4,7 +4,7 @@ export const ADD_CONTACT = 'ADD_CONTACT'
 export const UPDATE_CONTACT = 'UPDATE_CONTACT'
 
 const initialState = {
-    contacts: null,
+    contacts: [],
 }
 
 export function contactReducer(state = initialState, action = {}) {
@@ -23,7 +23,7 @@ export function contactReducer(state = initialState, action = {}) {
         case ADD_CONTACT:
             return {
                 ...state,
-                contacts: [...state.contacts, action.contact  ]
+                contacts: [...state.contacts, action.contact]
             }
 
         case UPDATE_CONTACT:
