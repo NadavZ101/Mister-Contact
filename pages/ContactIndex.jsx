@@ -15,6 +15,7 @@ export function ContactIndex() {
 
     function onRemoveContact(contactId) {
         console.log("🚀 ~ onRemoveContact ~ contactId:", contactId)
+        console.log('YYY')
 
     }
 
